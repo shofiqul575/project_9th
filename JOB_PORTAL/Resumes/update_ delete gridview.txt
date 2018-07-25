@@ -1,0 +1,40 @@
+    //Update Record  
+        private void btn_Update_Click(object sender, EventArgs e)  
+        {  
+            if (txt_Name.Text != "" && txt_State.Text != "")  
+            {  
+                cmd = new SqlCommand("update tbl_Record set Name=@name,State=@state where ID=@id", con);  
+                con.Open();  
+                cmd.Parameters.AddWithValue("@id", ID);  
+                cmd.Parameters.AddWithValue("@name", txt_Name.Text);  
+                cmd.Parameters.AddWithValue("@state", txt_State.Text);  
+                cmd.ExecuteNonQuery();  
+                MessageBox.Show("Record Updated Successfully");  
+                con.Close();  
+                DisplayData();  
+                ClearData();  
+            }  
+            else  
+            {  
+                MessageBox.Show("Please Select Record to Update");  
+            }  
+        }  
+        //Delete Record  
+        private void btn_Delete_Click(object sender, EventArgs e)  
+        {  
+            if(ID!=0)  
+            {  
+                cmd = new SqlCommand("delete tbl_Record where ID=@id",con);  
+                con.Open();  
+                cmd.Parameters.AddWithValue("@id",ID);  
+                cmd.ExecuteNonQuery();  
+                con.Close();  
+                MessageBox.Show("Record Deleted Successfully!");  
+                DisplayData();  
+                ClearData();  
+            }  
+            else  
+            {  
+                MessageBox.Show("Please Select Record to Delete");  
+            }  
+        }

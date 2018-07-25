@@ -1,0 +1,207 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #837669;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    color: #D53707;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+}
+
+p, ul, ol {
+    margin-top: 0;
+    line-height: 240%;
+    text-align: justify;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+ul, ol {
+}
+
+blockquote {
+}
+
+a {
+    color: #D53707;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a img {
+        border: none;
+    }
+
+img.left {
+    float: left;
+    margin: 7px 30px 0 0;
+}
+
+img.right {
+    float: right;
+    margin: 7px 0 0 30px;
+}
+
+hr {
+    display: none;
+}
+
+.text1 {
+    padding: 5px 10px 5px 10px;
+    background: #FF6600;
+    color: #000000;
+}
+
+/* Header */
+
+#header-wrapper {
+}
+
+#header {
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: cadetblue;
+    border-bottom: 4px solid #910000;
+}
+
+/* Menu */
+
+#menu {
+    float: left;
+    width: 680px;
+    height: 40px;
+}
+
+    #menu ul {
+        margin: 0;
+        padding: 25px 0 0 20px;
+        list-style: none;
+        line-height: normal;
+    }
+
+    #menu li {
+        display: block;
+        float: left;
+    }
+
+    #menu a {
+        display: block;
+        float: left;
+        margin-right: 17px;
+        padding: 5px 12px;
+        text-decoration: none;
+        font: 14px Georgia, "Times New Roman", Times, serif;
+        color: #FFFFFF;
+    }
+
+        #menu a:hover {
+            text-decoration:solid;
+            background: aquamarine ;
+        }
+
+   
+
+/* Page */
+
+#page {
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 299px;
+}
+
+/** LOGO */
+
+#logo {
+    height: 148px;
+}
+
+    #logo h1 {
+        padding-top: 45px;
+    }
+
+    #logo a {
+        padding: 5px 0 5px 10px;
+        text-decoration: none;
+        background: #000000;
+        color: #E46115;
+    }
+
+logo a:hover {
+    text-decoration: solid;
+}
+
+
+
+/* Content */
+
+#content {
+    float: left;
+    width: 80%;
+}
+
+/* Post */
+
+/*.post {
+    margin-bottom: 25px;
+}
+
+    .post .title {
+        margin-bottom: 3px;
+        padding: 2px 0px 2px 15px;
+        background-image: url(images/1.jpg) repeat left top;
+    }
+
+    .post .meta {
+        margin: 0 0 3px 0;
+        padding: 2px 30px 2px 15px;
+        font: italic 10px Georgia, "Times New Roman", Times, serif;
+        color: #B6ACA2;
+    }
+
+        .post .meta a {
+            color: #B6ACA2;
+        }
+
+    .post .entry {
+        padding: 25px 15px;
+    }*/
+
+
+
+/* Footer */
+
+#footer {
+    margin: 0 auto;
+    padding: 0;
+    background-color: orangered;
+    border-top: 4px solid #910000;
+}
+
+    #footer p {
+        margin: 0;
+        padding: 20px 0;
+        font-size: large;
+        text-align: center;
+        line-height: normal;
+        color: #FFFFFF;
+    }

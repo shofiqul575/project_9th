@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="JOB_PORTAL.masterpage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta name="viewport" content="width=device-width;height=device-height"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="style.css" rel="stylesheet" />   
+    
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header-wrapper">
+        <div id="header">
+            <div id="menu">
+                <ul>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li>
+                        <asp:LinkButton ID="lbtn_searchjobs_postjobs" runat="server" OnClick="lbtn_searchjobs_postjobs_Click"></asp:LinkButton></li>
+                    <li>
+                     <asp:LinkButton ID="lbtn_signup_profile" runat="server" OnClick="lbtn_signup_profile_Click"></asp:LinkButton> </li>
+                    
+                    <li><a href="About.aspx">About us</a></li>
+                    <li><a href="Contact.aspx">Contact us</a></li>
+                    <li>
+                      <asp:LinkButton ID="lbtn_login_logout" runat="server" OnClick="lbtn_login_logout_Click">Login</asp:LinkButton></li>
+                </ul>
+            </div>
+
+           <div style="float:right; margin-right:25px">
+                <asp:Label ID="Label1" runat="server" Text="Date &amp; Time:    " Font-Bold="True" Font-Size="X-Large" ForeColor="#660066"></asp:Label>
+               <asp:Label ID="lbl_time" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="White"></asp:Label>
+            </div>
+           
+            
+           
+        </div>
+
+        
+        <div id="page" style="background-image:url(Image/12.jpg);background-repeat:repeat-x;background-position:left top" class="auto-style1">
+            <div id="logo">
+                
+                    <a href="Home.aspx" style="background-color: #FFFFFF"><h1 style="text-decoration: none"> Jobs.bd.com</h1></a>
+            <marquee><font size="10" color="#800080"><i>The Official Job Site </i></font></marquee>
+            </div>
+           
+        </div>
+          
+    </div>
+    
+ 
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="footer">
+        <p>Copyright &copy 2017 Jobs.bd.com, All rights reserved.</p>
+    </div> 
+    </form>
+</body>
+</html>

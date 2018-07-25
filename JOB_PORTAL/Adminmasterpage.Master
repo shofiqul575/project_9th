@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Adminmasterpage.master.cs" Inherits="JOB_PORTAL.Adminmasterpage" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+         <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width"/>
+            <title></title>
+            <link rel="stylesheet" href="style3.css"/> 
+         <style type="text/css">
+             .auto-style1 {
+                 height: 291px;
+             }
+         </style>
+        </head>
+<body>
+    <form id="form1" runat="server">        
+                <header>
+                <div class="container">
+
+                    <div id="menu">
+                    <ul>
+                    <li ><a href="Admin.aspx" style="font-size: medium">Home</a></li>
+                    <li>
+                        <asp:LinkButton ID="lbtn_add_admin" runat="server" OnClick="lbtn_add_admin_Click" Font-Size="Medium">Add New Admin</asp:LinkButton></li>
+                    <li>
+                        <asp:LinkButton ID="lbtn_manage_account" runat="server" Font-Size="Medium" OnClick="lbtn_manage_account_Click"></asp:LinkButton>
+                   </li>
+                    <li>
+                        <asp:LinkButton ID="lbtn_manage_jobs" runat="server" Font-Size="Medium" OnClick="lbtn_manage_jobs_Click"></asp:LinkButton></li>
+                    <li>
+                        <asp:LinkButton ID="lbtn_login_logout" runat="server" OnClick="lbtn_login_logout_Click" Font-Size="Medium">Login</asp:LinkButton>
+                    </li>
+                    
+                </ul>
+            </div>
+                         
+ 
+                </div>
+            </header>
+        <div  id="showcase" style="background-position: center; background-image:url('/Image/10.jpg'); background-repeat:no-repeat; width: 1280px; height: 320px; clear: both;" class="auto-style1">             
+                    <h1>Admin Control Panel</h1>           
+             </div>       
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>       
+            <footer>Copyright &copy 2017 Jobs.bd.com</footer>
+    </form>
+</body>
+</html>
